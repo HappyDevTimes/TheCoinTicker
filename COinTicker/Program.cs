@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 using System.Diagnostics;
 using System.Windows.Input;
 
-namespace COinTicker
+namespace CoinTicker
 {
     class Program
     {
@@ -21,6 +21,7 @@ namespace COinTicker
         static double StartChangeLast7Days;
 
         /// <summary>
+        /// IMPORTANT: MESSY CODE! CLEAN IT UP!
         /// Calculate the profit / loss starting at the base of when the application is started.
         /// Do the func task async while waiting for button to be pressed.
         /// Clean up the messy code
@@ -55,7 +56,11 @@ namespace COinTicker
 
                 List<CoinMarketCapIndex> CoinData = JsonConvert.DeserializeObject<List<CoinMarketCapIndex>>(jString);
 
-                var firstHit = CoinData.First(x => x.name != "s");
+                //Develop the lambda algorithm
+                var firstHit = CoinData.First(x => x.name != "Coin");
+                ///
+                ///
+                ///
 
 
                 foreach (var coin in CoinData)
