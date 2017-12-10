@@ -23,6 +23,8 @@ namespace COinTicker
         /// <summary>
         /// Calculate the profit / loss starting at the base of when the application is started.
         /// Do the func task async while waiting for button to be pressed.
+        /// Clean up the messy code
+        /// Create a class for the functions
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
