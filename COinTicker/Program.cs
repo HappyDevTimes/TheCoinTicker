@@ -39,8 +39,6 @@ namespace CoinTicker
             userInput = Console.ReadLine().ToLower();
             try
             {
-
-
                 HttpWebRequest webReq = (HttpWebRequest)WebRequest.Create("https://api.coinmarketcap.com/v1/ticker/" + userInput);
                 webReq.Method = "GET";
 
